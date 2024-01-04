@@ -15,7 +15,7 @@ npm install matloop
 ### API and Usage
 
 ```typescript
-const numMatrix = [
+const numMatrix: number[][] = [
   [1, 2, 3],
   [4, 5, 6, 7],
   [8, 9],
@@ -24,10 +24,10 @@ const numMatrix = [
 ];
 
 // Prints a 1D array [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-const numList = [...matloop(numMatrix)];
+const numList = [...matloop<number>(numMatrix)];
 
 // Loop over a 2D matrix
-for (const element of matloop(numMatrix)) {
+for (const element of matloop<number>(numMatrix)) {
   console.log(element); // Prints 1, 2, 3, 4... and so on.
 }
 ```
