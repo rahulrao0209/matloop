@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "module": "CommonJS",
-    "target": "ES6",
-    "lib": ["ES6"],
+    "target": "es6",
+    "lib": ["ES2016", "DOM"],
     "sourceMap": true,
     "rootDir": "./src",
     "outDir": "./lib",
@@ -12,5 +12,5 @@
     "esModuleInterop": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "*.test.ts"]
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }

@@ -15,6 +15,8 @@ npm install matloop
 ### API and Usage
 
 ```typescript
+import matloop from "matloop";
+
 const numMatrix: number[][] = [
   [1, 2, 3],
   [4, 5, 6, 7],
